@@ -26,8 +26,8 @@ export default new Router({
     },
     {
       path:'/sponsors',
-      name:'sponsorsSS',
-      component: () => import('./views/Events.vue')
+      name:'sponsors',
+      component: () => import('./views/Sponsor.vue')
     }
   ]
 })

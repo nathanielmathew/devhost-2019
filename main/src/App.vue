@@ -1,19 +1,66 @@
 <template>
-  <div id="app">
-    <div id="nav">
-     
-    </div>
-    <router-view/>
+  <div id="App">
+    <ul id="Navbar">
+      <div id="NavElements"><div id="NavLeft">devhost<p id="nineteen">:19</p></div>
+        <div id="NavRight">
+          <li><a href="home.asp">Home</a></li>
+          <li><a href="sermon.asp">Event</a></li>
+          <li><a href="media.asp">Support</a></li>
+          <li><a href="about.asp">About us</a></li>
+        </div>
+      </div>
+    </ul>
   </div>
 </template>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#App{
+  font-family: sans-serif;
+}
+
+ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0 ;
+  padding: 10px ;
+  background: #130e25;
+  display: inline-block;
+  border-radius: 10px 10px;
+}
+
+#NavElements{
+  width: 95%;
+  color: white;
+  font-family: sans-serif;
+  padding: 15px 25px;
+}
+#NavLeft{
+  font-size: 39px;
+}
+
+#NavRight{
+  font-size: 30px;
+}
+#nineteen{
+  color: #50fd51;
+}
+li{
+  float: right;
+  padding: 0px 0px 0px;
+}
+
+li a {
+  display: block;
+  color: white;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  color: #50fd51;
+}
+#NavLeft, #NavRight,#nineteen
+{
+    display:inline;
 }
 </style>
