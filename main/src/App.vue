@@ -3,10 +3,10 @@
     <ul id="Navbar">
       <div id="NavElements"><div id="NavLeft">devhost<p id="nineteen">:19</p></div>
         <div id="NavRight">
-          <li><a href="home.asp">Home</a></li>
-          <li><a href="sermon.asp">Event</a></li>
-          <li><a href="media.asp">Support</a></li>
-          <li><a href="about.asp">About us</a></li>
+          <li><a href="Home.asp">Home</a></li>
+          <li><a href="Event.asp">Event</a></li>
+          <li><a href="Support.asp">Support</a></li>
+          <li><a href="About.asp">About us</a></li>
         </div>
       </div>
     </ul>
