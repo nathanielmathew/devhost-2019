@@ -1,37 +1,66 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      DevHost
-      <ul id="nav-links" style="list-style-type:none">
-        <li ><router-link to="/">Home</router-link></li>
-        <li><router-link to="/events">Events</router-link></li>
-        <li><router-link to="/sponsors">Sponsors</router-link></li>
-        <li><router-link to="/about">About Us</router-link></li>
-      </ul>
-    </div>
-    <router-view/>
+  <div id="App">
+    <ul id="Navbar">
+      <div id="NavElements"><div id="NavLeft">devhost<p id="nineteen">:19</p></div>
+        <div id="NavRight">
+          <li><a href="Home.asp">Home</a></li>
+          <li><a href="Event.asp">Event</a></li>
+          <li><a href="Support.asp">Support</a></li>
+          <li><a href="About.asp">About us</a></li>
+        </div>
+      </div>
+    </ul>
   </div>
 </template>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: left;
-  color: white;
- /* margin-top: 30px; */
-  font-size: 40px;
-  background-color: #080331;
+#App{
+  font-family: sans-serif;
 }
-#nav-links a{
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: right;
+
+ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0 ;
+  padding: 10px ;
+  background: #130e25;
+  display: inline-block;
+  border-radius: 10px 10px;
+}
+
+#NavElements{
+  width: 95%;
   color: white;
-  margin-top: 30px;
-  font-size: 20px;
-  background-color: #2c3e50;
+  font-family: sans-serif;
+  padding: 15px 25px;
+}
+#NavLeft{
+  font-size: 39px;
+}
+
+#NavRight{
+  font-size: 30px;
+}
+#nineteen{
+  color: #50fd51;
+}
+li{
+  float: right;
+  padding: 0px 0px 0px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  color: #50fd51;
+}
+#NavLeft, #NavRight,#nineteen
+{
+    display:inline;
 }
 </style>
