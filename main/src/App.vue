@@ -7,12 +7,13 @@
           <li><a href="Event.asp">Event</a></li>
           <li><a href="Support.asp">Support</a></li>
           <li><a href="About.asp">About us</a></li>
+    
         </div>
+        <Event></Event>
       </div>
     </ul>
   </div>
 </template>
-
 <style>
 #App{
   font-family: sans-serif;
@@ -64,3 +65,5 @@ li a:hover:not(.active) {
     display:inline;
 }
 </style>
+<script>
+</script>
