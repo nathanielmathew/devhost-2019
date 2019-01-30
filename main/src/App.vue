@@ -9,7 +9,7 @@
           <li><a href="About.asp">About us</a></li>
     
         </div>
-        <Event></Event>
+        <event></event>
       </div>
     </ul>
   </div>
@@ -66,4 +66,10 @@ li a:hover:not(.active) {
 }
 </style>
 <script>
+import Event from "./views/Events";
+export default{
+  components:{
+    'event':Event
+  }
+}
 </script>
